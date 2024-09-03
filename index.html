@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="" method="post">
+        <h1>Trabalho Html Leonardo Petri Hammer</h1>
+        <fieldset>
+            <legend><h1>Contato</h1></legend>
+            <label for="nome:">Nome:</label>
+            <input type="text" id="nome:" name="Nome">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="@gmail.com" placeholder="Digite Seu Email" required>
+            <br><br>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required maxlength="8" size="8">
+            <br><br>
+            <br>
+           </fieldset>
+           <fieldset>
+            <legend><h2>Sexo</h2></legend>
+            <label for="radio">Masculino</label>
+            <input type="radio" id="Masculino" name="genero"> <br>
+            <label for="radio"> Feminino</label>
+            <input type="radio" id="Feminino" name="genero">
+            <br>
+            <label for="radio">Prefiro não Informar</label>
+            <input type="radio" id="Prefiro não informar" name="genero">
+            <hr>
+            </fieldset>
+            <fieldset>
+            <legend><h2>Lista de Compras</h2></legend>
+            <input type="checkbox" name="feijão" id="feijão">
+            <label for="feijão"> Feijão</label>
+            <br>
+            <input type="checkbox" name="Arroz" id="Arroz">
+            <label for="Arroz">Arroz</label>
+            <br>
+            <input type="checkbox" name="Cartas Pokemon" id="Cartas Pokemon">
+            <label for="Cartas Pokemon">Cartas Pokemon</label>
+            </fieldset>
+            <fieldset>
+            <select name="Estados do Sul" id="Estados do Sul">
+            <optgroup label="Sul">
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>   
+            </optgroup>
+            <optgroup label="Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espirito Santo</option>
+            </optgroup>
+            <OPtgroup label="Outros">
+                <OPTion value="Muitos Estados">Muitos Estados</OPTion>
+            </OPtgroup>
+        <hr>
+        </fieldset>
+        <fieldset>
+           
+        <label for="feedback"><h2>Feedback</h2>h2/label>
+        <textarea name="feedback" rows="10" cols="30" id="feedback">Aqui será seu feedback</textarea>
+        <hr>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Mozila Fox"></option>
+            </datalist>
+        <hr>
+        <input type="reset">
+        <input type="submit">    
+    </fieldset>
+    </form>
+</body>
+</html>
