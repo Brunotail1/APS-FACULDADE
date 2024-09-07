@@ -35,6 +35,7 @@
             <hr>
             </fieldset>
             <fieldset>
+                <form>
             <legend><h2>Lista de Compras</h2></legend>
             <input type="checkbox" name="feijão" id="feijão">
             <label for="feijão"> Feijão</label>
@@ -45,28 +46,33 @@
             <input type="checkbox" name="Cartas Pokemon" id="Cartas Pokemon">
             <label for="Cartas Pokemon">Cartas Pokemon</label>
             </fieldset>
-            <fieldset>
-            <select name="Estados do Sul" id="Estados do Sul">
-            <optgroup label="Sul">
-                <option value="SC">Santa Catarina</option>
-                <option value="PR">Paraná</option>
-                <option value="RS">Rio Grande do Sul</option>   
-            </optgroup>
-            <optgroup label="Sudeste">
-                <option value="SP">São Paulo</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="ES">Espirito Santo</option>
-            </optgroup>
-            <OPtgroup label="Outros">
-                <OPTion value="Muitos Estados">Muitos Estados</OPTion>
-            </OPtgroup>
-        <hr>
-        </fieldset>
-        <fieldset>
-           
-        <label for="feedback"><h2>Feedback</h2>h2/label>
-        <textarea name="feedback" rows="10" cols="30" id="feedback">Aqui será seu feedback</textarea>
+                <fieldset>
+                    <legend><h2>Estados</h2></legend>
+                    <select name="estados" id="estados">
+                        <optgroup label="Sul">
+                            <option value="SC">Santa Catarina</option>
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                        </optgroup>
+                        <optgroup label="Sudeste">
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espírito Santo</option>
+                        </optgroup>
+                        <optgroup label="Outros">
+                            <option value="Muitos Estados">Muitos Estados</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Feedback</h2></legend>
+                    <label for="feedback"><h3>Comentários:</h3> </label>
+                    <textarea name="feedback" rows="5" cols="30" id="feedback">Aqui será seu feedback</textarea>
+                </fieldset>
+      </form>
+    </fieldset>
+
         <hr>
         <input list="browsers">
         <datalist id="browsers">
